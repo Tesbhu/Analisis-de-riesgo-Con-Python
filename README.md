@@ -1,2 +1,8 @@
-# Analisis-de-riesgo-Con-Python
-Creación de modelos estadísticos orientado exclusivamente a finanzas
+# Análisis de riesgo con python
+
+## ¿Teoría del riesgo?
+
+## Modelos
+- Aprobación de prestamos
+- Credito Aleman
+- Scoring 
