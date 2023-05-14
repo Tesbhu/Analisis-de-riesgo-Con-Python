@@ -51,7 +51,34 @@ En la gestión de riesgos financieros, existen varias métricas ampliamente util
 Estas son solo algunas de las métricas utilizadas en la gestión de riesgos financieros. Cabe destacar que la elección de las métricas y su relevancia dependerá del tipo de riesgo que se esté evaluando, como el riesgo de mercado, el riesgo de crédito, el riesgo operacional, entre otros.
 
 
-
 ## Todo el poder de python
 
+Veamos un ejemplo de una métrica muy usada:
+
+La "Loss Given Default" (LGD) es una métrica utilizada en la gestión de riesgos financieros, especialmente en el ámbito de los préstamos y la banca. LGD es una medida que estima la pérdida económica que se espera en caso de que un prestatario incumpla con sus obligaciones y entre en default (incumplimiento).
+
+La LGD se expresa como un porcentaje del monto total del préstamo o de la exposición crediticia. Por ejemplo, si la LGD se estima en un 40%, significa que se espera que, en caso de incumplimiento, se pierda el 40% del valor total del préstamo. El restante 60% se recuperaría a través de mecanismos como garantías, liquidación de activos o recuperación de deudas.
+
+El cálculo de la LGD puede ser complejo y depende de varios factores, como la calidad crediticia del prestatario, el tipo de activo financiado, las garantías existentes y la capacidad de recuperación en caso de incumplimiento. Las instituciones financieras y los analistas de riesgos utilizan diversos modelos y enfoques para estimar la LGD de manera precisa.
+
+Es importante destacar que la LGD puede variar ampliamente según el contexto y las circunstancias específicas. En general, los prestamistas y las instituciones financieras buscan minimizar la LGD a través de una evaluación cuidadosa del riesgo crediticio, la implementación de medidas de mitigación y una gestión efectiva de las situaciones de incumplimiento.
+
+Si deseas calcular la pérdida esperada o el Loss Given Default (LGD) en Python, necesitarías tener datos relevantes, como el monto del préstamo, el valor de mercado del activo subyacente, las garantías disponibles y otros factores pertinentes. A continuación, te mostraré un ejemplo simple de cómo podrías calcular la LGD en Python, asumiendo que ya tienes los datos necesarios:
+
+```python
+def calcular_lgd(monto_prestamo, valor_mercado, garantias):
+    lgd = (monto_prestamo - valor_mercado + garantias) / monto_prestamo
+    return lgd
+
+monto_prestamo = 100000  # Monto total del préstamo
+valor_mercado = 60000  # Valor de mercado del activo subyacente
+garantias = 20000  # Valor de las garantías disponibles
+
+lgd = calcular_lgd(monto_prestamo, valor_mercado, garantias)
+print("Loss Given Default (LGD):", lgd)
+```
+
+En este ejemplo, la función `calcular_lgd` toma el monto del préstamo, el valor de mercado del activo y el valor de las garantías como parámetros. Luego, calcula la LGD dividiendo la diferencia entre el monto del préstamo, el valor de mercado y las garantías disponibles por el monto del préstamo original. El resultado se almacena en la variable `lgd` y se imprime en la consola.
+
+Recuerda que este es solo un ejemplo simplificado y que el cálculo real de la LGD puede requerir considerar más factores y utilizar modelos más complejos dependiendo del contexto y los datos disponibles.
 
